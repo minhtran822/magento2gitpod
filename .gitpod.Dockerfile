@@ -35,7 +35,7 @@ RUN sudo apt-get update \
     && sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
     && sudo update-alternatives --remove php /usr/bin/php8.0 \
     && sudo update-alternatives --remove php /usr/bin/php7.3 \
-    && sudo update-alternatives --set php /usr/bin/php7.4 \
+    && sudo update-alternatives --set php /usr/bin/php8.0 \
     && sudo echo "daemon off;" >> /etc/nginx/nginx.conf
 
 #Adjust few options for xDebug and disable it by default
