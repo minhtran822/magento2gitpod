@@ -1,5 +1,6 @@
 FROM gitpod/workspace-full:latest
 
+USER gitpod
 RUN sudo apt-get update
 RUN sudo apt-get -y install lsb-release
 RUN sudo apt-get -y install apt-utils
